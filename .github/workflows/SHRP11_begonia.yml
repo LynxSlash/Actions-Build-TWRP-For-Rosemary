@@ -20,10 +20,10 @@ env:
   Rec_ver: v3_11.0
   Rec_url: https://github.com/SHRP/manifest.git -b v3_11.0
   device: begonia
-  DT_url: https://github.com/RC1844/twrp_redmi_begonia -b MIUI-android-11.0
-  DT_path: device/redmi/begonia
+  DT_url: https://github.com/LynxSlash/recovery_device_redmi_rosemary -b android-12.1
+  DT_path: device/redmi/rosemary
   ProductFileHeader: twrp
-  target: recoveryimage
+  target: bootimage
   WorkSpace: WorkSpace
   TZ: Asia/Shanghai
   Author: ${{github.actor}}
@@ -31,7 +31,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: "Cleanup Environment"
