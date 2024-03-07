@@ -1,4 +1,4 @@
-name: SHRP Builder
+name: SHRP Builder rosemary
 
 on:
   workflow_dispatch:
