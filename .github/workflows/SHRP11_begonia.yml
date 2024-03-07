@@ -1,4 +1,4 @@
-name: SHRP11 Builder
+name: SHRP Builder
 
 on:
   workflow_dispatch:
@@ -16,10 +16,10 @@ on:
         required: false
         default: "false"
 env:
-  Rec_name: SHRP11
-  Rec_ver: v3_11.0
-  Rec_url: https://github.com/SHRP/manifest.git -b v3_11.0
-  device: begonia
+  Rec_name: SHRP
+  Rec_ver: shrp-12.1
+  Rec_url: https://github.com/SHRP/manifest.git -b shrp-12.1
+  device: rosemary
   DT_url: https://github.com/LynxSlash/recovery_device_redmi_rosemary -b android-12.1
   DT_path: device/redmi/rosemary
   ProductFileHeader: twrp
